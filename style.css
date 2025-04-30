@@ -1,0 +1,137 @@
+/* General body setup */
+body {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: url('https://assets.deadbydaylight.com/Blood_Event_Web_Screenshots_POSTPROD_Lobby01_c8f55eb68b.png') center/cover no-repeat fixed;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  background-color: #1b1b1b;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Title */
+h1 {
+  font-size: 2.5em;
+  color: #ff3333;
+  text-shadow: 2px 2px 8px #000;
+  margin-bottom: 20px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none; /* Disable text selection */
+}
+
+/* Grid setup */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  width: 95%;
+  max-width: 1800px;
+  margin-top: 20px;
+  animation: fadeIn 1s ease;
+}
+
+/* Card setup */
+.card {
+  background: rgba(0, 0, 0, 0.85);
+  border: 2px solid #8B0000;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 5px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #8B0000;
+}
+
+.card p {
+  margin: 6px 0 0 0;
+  font-weight: bold;
+  font-size: 1em;
+  color: white;
+}
+
+/* Card hover */
+.card:hover {
+  box-shadow: 0 0 15px 5px #8B0000;
+  transform: scale(1.05);
+}
+
+/* Faded card */
+.card.fade {
+  opacity: 0.25;
+  filter: grayscale(100%);
+  transform: scale(0.95);
+  transition: all 0.4s ease;
+}
+
+/* Button section */
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Buttons */
+button {
+  padding: 12px 24px;
+  background-color: #8B0000;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+button:hover {
+  background-color: #660000;
+}
+
+button:active {
+  background-color: #a10000;
+}
+
+/* Random character text */
+#random-character {
+  margin-top: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Animation for grid fade in */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Small screen (mobile) responsiveness */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  #random-character {
+    font-size: 1.2rem;
+  }
+  .card p {
+    font-size: 0.9em;
+  }
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
