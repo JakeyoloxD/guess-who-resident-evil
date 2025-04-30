@@ -6,7 +6,7 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  background: url('https://assets.deadbydaylight.com/Blood_Event_Web_Screenshots_POSTPROD_Lobby01_c8f55eb68b.png') center/cover no-repeat fixed;
+  background: url('./assets/images/background.png') center/cover no-repeat fixed;
   font-family: 'Arial', sans-serif;
   color: white;
   background-color: #1b1b1b;
