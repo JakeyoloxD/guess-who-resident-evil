@@ -35,16 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Random character picker
   window.generateCharacter = function() {
     const characterNames = [
-      "Dwight Fairfield", "Meg Thomas", "Claudette Morel", "Jake Park", "Nea Karlsson", "David King", "Feng Min", "Kate Denson",
-      "Quentin Smith", "Laurie Strode", "Ace Visconti", "Bill Overbeck", "Ashley J. Williams", "Jane Romero", "Jeff Johansen", "Yui Kimura",
-      "Zarina Kassir", "Steve Harrington", "Nancy Wheeler", "Felix Richter", "Elodie Rakoto", "Yun-Jin Lee", "Jill Valentine", "David Tapp",
-      "Leon S. Kennedy", "Mikaela Reid", "Sable Ward", "Aestri", "Lara Croft", "Trevor Belmont", "Taurie Cain", "Cheryl Mason", "Jonah Vasquez",
-      "Haddie Kaur", "Vittorio Toscano", "Ada Wong", "Adam Francis", "Rebecca Chambers", "Thalita Lyra", "Renato Lyra", "Gabriel Soma",
-      "Nicolas Cage", "Ellen Ripley", "Alan Wake", "Yoichi Asakawa",
-      "Trapper", "Wraith", "Hillbilly", "Nurse", "Huntress", "Myers", "Hag", "Doctor", "Cannibal", "Nightmare", "Pig",
-      "Clown", "Spirit", "Legion", "Plague", "Ghost Face", "Demogorgon", "Oni", "Deathslinger", "Pyramid Head", "Blight",
-      "Twins", "Trickster", "Nemesis", "Pinhead", "Artist", "Onryō", "Dredge", "Wesker", "Knight", "Skull Merchant",
-      "Singularity", "Xenomorph", "Chucky", "Unknown", "Hound Master", "Dark Lord", "Ghoul", "Lich"
+      "Jill Valentine", "Leon S. Kennedy", "Ada Wong", "Rebecca Chambers", "Nemesis", "Wesker"
     ];
 
     const randomIndex = Math.floor(Math.random() * characterNames.length);
