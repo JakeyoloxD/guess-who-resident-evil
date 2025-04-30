@@ -35,7 +35,30 @@ document.addEventListener('DOMContentLoaded', () => {
   // Random character picker
   window.generateCharacter = function() {
     const characterNames = [
-      "Jill Valentine", "Leon S. Kennedy", "Ada Wong", "Rebecca Chambers", "Nemesis", "Wesker"
+    "Jill Valentine",
+    "Leon S. Kennedy",
+    "Ada Wong",
+    "Rebecca Chambers",
+    "Nemesis",
+    "Wesker",
+    "Chris Redfield",
+    "Claire Redfield",
+    "Barry Burton",
+    "Carlos Oliveira",
+    "Sheva Alomar",
+    "Ethan Winters",
+    "Mia Winters",
+    "Rosemary Winters",
+    "Lady Dimitrescu",
+    "Karl Heisenberg",
+    "Salvatore Moreau",
+    "Donna Beneviento",
+    "HUNK",
+    "Sherry Birkin",
+    "William Birkin",
+    "Piers Nivans",
+    "Helena Harper",
+    "Jack Baker"
     ];
 
     const randomIndex = Math.floor(Math.random() * characterNames.length);
